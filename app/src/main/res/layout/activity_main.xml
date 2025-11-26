@@ -11,20 +11,20 @@
         android:id="@+id/imageView"
         android:layout_width="384dp"
         android:layout_height="256dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="236dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ai_generated_cat_looking_torn_hole_free_png" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="291dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="50dp"
+        android:layout_width="203dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/bowlby_one"
-        android:text="PAWS&CLICKS"
+        android:text="PAWS AND CLICKS"
         android:textColor="#070707"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,35 +32,69 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="66dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/free_icon_cat_food_840698" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="35dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="36dp"
+        android:layout_width="126dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="104dp"
         android:background="#00FFFFFF"
         android:backgroundTint="#00FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/free_icon_cat_paw_18985159"
-        tools:layout_editor_absoluteY="50dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/free_icon_cat_paw_18985159" />
 
     <TextView
         android:id="@+id/count"
         android:layout_width="263dp"
         android:layout_height="76dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/bowlby_one"
         android:text="0"
         android:textColor="#040303"
         android:textSize="60sp"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/shopButton"
+        android:layout_width="98dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/free_icon_store_7179866" />
+
+    <ImageView
+        android:id="@+id/achievementButton"
+        android:layout_width="104dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:srcCompat="@drawable/free_icon_medal_1895474" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="131dp"
+        android:layout_height="92dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/free_icon_home_25694" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
